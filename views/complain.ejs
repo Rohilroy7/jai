@@ -1,0 +1,32 @@
+<% layout('/layout/boilerplate.ejs') %>
+<link rel="stylesheet" href="/css/complain.css">
+
+<section class="box">
+    <h1>Register a complain</h1>
+    <form action="" method="post">
+        <label for="name">Name</label>
+        <input name="name" type="text" placeholder="e.g. John" required>
+        <div class="part-1">
+            <div class="part-2">
+            <label for="room">Room No</label>
+            <input type="text" required placeholder="e.g.I-702">
+        </div>
+            <div class="part-2">
+                <label for="phone">Phone</label>
+                <input type="text"  required name="phone" placeholder="e.g. 555-555-555">
+            </div> 
+        </div>
+            <label for="complaint_type">Complaint Type</label>
+            <select required name="complain_type" >
+                <option  value="Plumbing">Plumbing</option>
+                <option  value="Electricity">Electricity</option>
+                <option   value="Carpentary">Carpentary</option>
+                <option  value="Wi-fi">Wi-fi</option>
+                <option  value="Cleaning">Cleaning</option>
+              </select>
+              <label for="compalin_details">Complaint details</label>
+              <textarea  name="compalint_details" cols="1" rows="3"></textarea>
+            
+    </form>
+  <a href="/complain_submit"> <button class="button" type="submit">Submit</button></a>
+</section>

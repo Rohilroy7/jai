@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+ }
+ section{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+    min-height: 80vh;
+ }
+ .left-side
+ {
+    display: flex;
+    flex: 0.1 1 30rem;
+    min-width: 10vw;
+    min-height: 60vh;
+    border: solid;
+    margin: 1% 1%;
+  justify-content: center;
+  align-items: center;
+ }
+ .right-side
+ {
+    display: flex;
+    flex: 0.1 1 30rem;
+    min-width: 10vw;
+    min-height: 60vh;
+    border: solid;
+    margin: 1% 1%;
+ justify-content: center;
+ align-items: center;
+ }
